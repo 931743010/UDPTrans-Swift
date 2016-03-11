@@ -12,4 +12,6 @@
 方法很容易搜索到
 
 也可以到我简书文章中查看，有什么问题欢迎联系我
-![image]()
+
+效果浏览：
+![image](https://github.com/lfb-cd/gif/blob/master/UDPTrans2016-03-11%2017_15_20.gif)
