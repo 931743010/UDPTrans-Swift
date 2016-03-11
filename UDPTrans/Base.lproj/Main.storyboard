@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fi4-8M-0uL">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="pb9-jT-yoK">
+            <objects>
+                <viewController id="fi4-8M-0uL" customClass="ViewController" customModule="UDPTrans_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JOK-8j-f9e"/>
+                        <viewControllerLayoutGuide type="bottom" id="RCW-3f-eS3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kar-87-XIk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zpB-Wm-Lj1">
+                                <rect key="frame" x="277" y="445" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Hm4-kI-BW7"/>
+                                </constraints>
+                                <state key="normal" title="start">
+                                    <color key="titleColor" red="1" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="hFT-z9-kkn"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="基于UDP协议的数据传输。目前实现了扫描界面，发现逻辑以及消息发送。数据文件传输待完善。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZN-YA-aSx">
+                                <rect key="frame" x="180" y="146" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="gn6-C2-xS3"/>
+                                    <constraint firstAttribute="height" constant="128" id="uSZ-gP-YII"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKS-wb-nBL">
+                                <rect key="frame" x="277" y="294" width="45" height="30"/>
+                                <state key="normal" title="关于我"/>
+                                <connections>
+                                    <action selector="aboutMe:" destination="fi4-8M-0uL" eventType="touchUpInside" id="bmy-lI-uAZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zpB-Wm-Lj1" firstAttribute="centerX" secondItem="Kar-87-XIk" secondAttribute="centerX" id="5Rv-4v-sZv"/>
+                            <constraint firstItem="5ZN-YA-aSx" firstAttribute="centerX" secondItem="Kar-87-XIk" secondAttribute="centerX" id="AQZ-D3-fTT"/>
+                            <constraint firstItem="RCW-3f-eS3" firstAttribute="top" secondItem="zpB-Wm-Lj1" secondAttribute="bottom" constant="125" id="MN5-Se-xyS"/>
+                            <constraint firstItem="gKS-wb-nBL" firstAttribute="top" secondItem="5ZN-YA-aSx" secondAttribute="bottom" constant="20" id="fmu-4c-IBY"/>
+                            <constraint firstItem="gKS-wb-nBL" firstAttribute="leading" secondItem="zpB-Wm-Lj1" secondAttribute="leading" id="gbH-Wu-tmN"/>
+                            <constraint firstItem="5ZN-YA-aSx" firstAttribute="top" secondItem="JOK-8j-f9e" secondAttribute="bottom" constant="126" id="jfj-uz-hgC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qaA-Zo-ocA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-341" y="357"/>
+        </scene>
+        <!--Trans View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="UDPTransViewController" customModule="UDPTrans_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SkyBg01" translatesAutoresizingMaskIntoConstraints="NO" id="0PJ-w2-OEl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wifiName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Aa-HB-ZXt">
+                                <rect key="frame" x="270" y="27" width="60" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfy-07-nua">
+                                <rect key="frame" x="20" y="20" width="44" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="XGY-pz-VM7"/>
+                                </constraints>
+                                <state key="normal" title="退出">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r1O-6A-FBj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userOfSelf" translatesAutoresizingMaskIntoConstraints="NO" id="5cF-H5-xGq">
+                                <rect key="frame" x="270" y="510" width="60" height="60"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHt-Lm-mzq">
+                                <rect key="frame" x="300" y="594" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZC-Qn-2SQ">
+                                <rect key="frame" x="550" y="21" width="30" height="30"/>
+                                <state key="normal" title="帮助"/>
+                                <connections>
+                                    <action selector="help:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xH-C8-SO0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pHt-Lm-mzq" firstAttribute="centerX" secondItem="5cF-H5-xGq" secondAttribute="centerX" id="2Lm-LP-Tv4"/>
+                            <constraint firstItem="5cF-H5-xGq" firstAttribute="centerX" secondItem="0Aa-HB-ZXt" secondAttribute="centerX" id="3yq-Q2-j15"/>
+                            <constraint firstItem="0PJ-w2-OEl" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="65K-Vx-EQp"/>
+                            <constraint firstItem="Yfy-07-nua" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AGY-TE-6NY"/>
+                            <constraint firstAttribute="bottom" secondItem="5cF-H5-xGq" secondAttribute="bottom" constant="30" id="AXR-Tg-mlH"/>
+                            <constraint firstItem="0Aa-HB-ZXt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DCM-be-T97"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pHt-Lm-mzq" secondAttribute="bottom" constant="6" id="Jff-2r-ncd"/>
+                            <constraint firstItem="0PJ-w2-OEl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QfJ-Ht-Rbi"/>
+                            <constraint firstItem="Yfy-07-nua" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SrU-QF-kKO"/>
+                            <constraint firstItem="GZC-Qn-2SQ" firstAttribute="centerY" secondItem="0Aa-HB-ZXt" secondAttribute="centerY" id="Ws6-d6-RIM"/>
+                            <constraint firstItem="Yfy-07-nua" firstAttribute="centerY" secondItem="0Aa-HB-ZXt" secondAttribute="centerY" id="ZD0-q4-zUt"/>
+                            <constraint firstItem="0PJ-w2-OEl" firstAttribute="centerX" secondItem="5cF-H5-xGq" secondAttribute="centerX" id="beL-8r-3u9"/>
+                            <constraint firstItem="0PJ-w2-OEl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gpt-ND-2mx"/>
+                            <constraint firstItem="GZC-Qn-2SQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wMa-19-YmR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="Yfy-07-nua" id="etp-Yn-rbw"/>
+                        <outlet property="userName" destination="pHt-Lm-mzq" id="OTe-80-8Eg"/>
+                        <outlet property="userOfMe" destination="5cF-H5-xGq" id="iqU-3r-KkM"/>
+                        <outlet property="wifiNameLabel" destination="0Aa-HB-ZXt" id="qYD-Ze-7o9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="387"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SkyBg01" width="320" height="490"/>
+        <image name="userOfSelf" width="60" height="60"/>
+    </resources>
+</document>

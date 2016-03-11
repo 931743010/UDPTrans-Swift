@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		676291A41C911FF2008FB038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676291A31C911FF2008FB038 /* AppDelegate.swift */; };
+		676291A61C911FF2008FB038 /* UDPTransViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676291A51C911FF2008FB038 /* UDPTransViewController.swift */; };
+		676291A91C911FF2008FB038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676291A71C911FF2008FB038 /* Main.storyboard */; };
+		676291AB1C911FF2008FB038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 676291AA1C911FF2008FB038 /* Assets.xcassets */; };
+		676291AE1C911FF2008FB038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 676291AC1C911FF2008FB038 /* LaunchScreen.storyboard */; };
+		676291B81C912027008FB038 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 676291B71C912027008FB038 /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		676291BE1C914B81008FB038 /* NetWorkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 676291BD1C914B81008FB038 /* NetWorkHelper.m */; };
+		676291C01C9150DE008FB038 /* DeveiceDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676291BF1C9150DE008FB038 /* DeveiceDataModel.swift */; };
+		676291C31C915B91008FB038 /* IPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 676291C21C915B91008FB038 /* IPHelper.m */; };
+		676291C51C916F4A008FB038 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676291C41C916F4A008FB038 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		676291A01C911FF2008FB038 /* UDPTrans-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UDPTrans-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		676291A31C911FF2008FB038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		676291A51C911FF2008FB038 /* UDPTransViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDPTransViewController.swift; sourceTree = "<group>"; };
+		676291A81C911FF2008FB038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		676291AA1C911FF2008FB038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		676291AD1C911FF2008FB038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		676291AF1C911FF2008FB038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		676291B51C912026008FB038 /* UDPTrans-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UDPTrans-Bridging-Header.h"; sourceTree = "<group>"; };
+		676291B61C912027008FB038 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		676291B71C912027008FB038 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		676291BC1C914B81008FB038 /* NetWorkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkHelper.h; sourceTree = "<group>"; };
+		676291BD1C914B81008FB038 /* NetWorkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkHelper.m; sourceTree = "<group>"; };
+		676291BF1C9150DE008FB038 /* DeveiceDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeveiceDataModel.swift; sourceTree = "<group>"; };
+		676291C11C915B91008FB038 /* IPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPHelper.h; sourceTree = "<group>"; };
+		676291C21C915B91008FB038 /* IPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPHelper.m; sourceTree = "<group>"; };
+		676291C41C916F4A008FB038 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6762919D1C911FF2008FB038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		676291971C911FF2008FB038 = {
+			isa = PBXGroup;
+			children = (
+				676291A21C911FF2008FB038 /* UDPTrans */,
+				676291A11C911FF2008FB038 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		676291A11C911FF2008FB038 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				676291A01C911FF2008FB038 /* UDPTrans-Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		676291A21C911FF2008FB038 /* UDPTrans */ = {
+			isa = PBXGroup;
+			children = (
+				676291A31C911FF2008FB038 /* AppDelegate.swift */,
+				676291A51C911FF2008FB038 /* UDPTransViewController.swift */,
+				676291C41C916F4A008FB038 /* ViewController.swift */,
+				676291A71C911FF2008FB038 /* Main.storyboard */,
+				676292341C919DC6008FB038 /* Model */,
+				676291F41C918ECA008FB038 /* Helper */,
+				676291B91C91202E008FB038 /* AsyncUdpSocket */,
+				676291AA1C911FF2008FB038 /* Assets.xcassets */,
+				676291AC1C911FF2008FB038 /* LaunchScreen.storyboard */,
+				676291AF1C911FF2008FB038 /* Info.plist */,
+				676291B51C912026008FB038 /* UDPTrans-Bridging-Header.h */,
+			);
+			path = UDPTrans;
+			sourceTree = "<group>";
+		};
+		676291B91C91202E008FB038 /* AsyncUdpSocket */ = {
+			isa = PBXGroup;
+			children = (
+				676291B61C912027008FB038 /* AsyncUdpSocket.h */,
+				676291B71C912027008FB038 /* AsyncUdpSocket.m */,
+			);
+			name = AsyncUdpSocket;
+			sourceTree = "<group>";
+		};
+		676291F41C918ECA008FB038 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				676291C11C915B91008FB038 /* IPHelper.h */,
+				676291C21C915B91008FB038 /* IPHelper.m */,
+				676291BC1C914B81008FB038 /* NetWorkHelper.h */,
+				676291BD1C914B81008FB038 /* NetWorkHelper.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		676292341C919DC6008FB038 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				676291BF1C9150DE008FB038 /* DeveiceDataModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6762919F1C911FF2008FB038 /* UDPTrans-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 676291B21C911FF2008FB038 /* Build configuration list for PBXNativeTarget "UDPTrans-Swift" */;
+			buildPhases = (
+				6762919C1C911FF2008FB038 /* Sources */,
+				6762919D1C911FF2008FB038 /* Frameworks */,
+				6762919E1C911FF2008FB038 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UDPTrans-Swift";
+			productName = UDPTrans;
+			productReference = 676291A01C911FF2008FB038 /* UDPTrans-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		676291981C911FF2008FB038 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = lifubing;
+				TargetAttributes = {
+					6762919F1C911FF2008FB038 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 6762919B1C911FF2008FB038 /* Build configuration list for PBXProject "UDPTrans-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 676291971C911FF2008FB038;
+			productRefGroup = 676291A11C911FF2008FB038 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6762919F1C911FF2008FB038 /* UDPTrans-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6762919E1C911FF2008FB038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676291AE1C911FF2008FB038 /* LaunchScreen.storyboard in Resources */,
+				676291AB1C911FF2008FB038 /* Assets.xcassets in Resources */,
+				676291A91C911FF2008FB038 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6762919C1C911FF2008FB038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				676291BE1C914B81008FB038 /* NetWorkHelper.m in Sources */,
+				676291C01C9150DE008FB038 /* DeveiceDataModel.swift in Sources */,
+				676291C31C915B91008FB038 /* IPHelper.m in Sources */,
+				676291B81C912027008FB038 /* AsyncUdpSocket.m in Sources */,
+				676291C51C916F4A008FB038 /* ViewController.swift in Sources */,
+				676291A61C911FF2008FB038 /* UDPTransViewController.swift in Sources */,
+				676291A41C911FF2008FB038 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		676291A71C911FF2008FB038 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				676291A81C911FF2008FB038 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		676291AC1C911FF2008FB038 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				676291AD1C911FF2008FB038 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		676291B01C911FF2008FB038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		676291B11C911FF2008FB038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		676291B31C911FF2008FB038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = UDPTrans/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lfb.com.UDPTrans;
+				PRODUCT_NAME = "UDPTrans-Swift";
+				SWIFT_OBJC_BRIDGING_HEADER = "UDPTrans/UDPTrans-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		676291B41C911FF2008FB038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = UDPTrans/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = lfb.com.UDPTrans;
+				PRODUCT_NAME = "UDPTrans-Swift";
+				SWIFT_OBJC_BRIDGING_HEADER = "UDPTrans/UDPTrans-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6762919B1C911FF2008FB038 /* Build configuration list for PBXProject "UDPTrans-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676291B01C911FF2008FB038 /* Debug */,
+				676291B11C911FF2008FB038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		676291B21C911FF2008FB038 /* Build configuration list for PBXNativeTarget "UDPTrans-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				676291B31C911FF2008FB038 /* Debug */,
+				676291B41C911FF2008FB038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 676291981C911FF2008FB038 /* Project object */;
+}
