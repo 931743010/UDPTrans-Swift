@@ -11,7 +11,7 @@
 比如: ARC与非ARC混编 swift与OC混编 
 方法很容易搜索到
 
-也可以到我简书文章中查看，有什么问题欢迎联系我
+也可以到我[简书文章](http://www.jianshu.com/users/e78a977ccaeb/latest_articles)中查看，有什么问题欢迎[联系我](http://weibo.com/lfbWb)
 
 效果浏览：
 
